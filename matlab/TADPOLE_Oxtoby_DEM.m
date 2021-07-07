@@ -231,6 +231,7 @@ if runDEM
     [id_u,ind] = unique(id,'stable');
     
     %* Postselect data for disease specificity etc.
+    DEM_subset = ones(size(x));
     %* Optional: remove high-variance (coefficient of variation > 4)
     removeLargeCoeffOfVariance = true;
     %* Coefficient of variation < 0.25 (see Bateman 2012, and possibly also Fagan 2014: longitudinal CSF)
